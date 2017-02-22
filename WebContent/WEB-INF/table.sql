@@ -1,0 +1,17 @@
+CREATE TABLE hp_users(
+id VARCHAR2(100) PRIMARY KEY, 
+pwd VARCHAR2(100) NOT NULL, 
+email VARCHAR2(100),
+regdate DATE
+);
+
+CREATE SEQUENCE hp_users_seq NOCACHE;
+
+
+CREATE TABLE hp_board(num NUMBER PRIMARY KEY, 
+writer VARCHAR2(20), 
+title VARCHAR2(100),
+content CLOB,
+regdate DATE);
+
+CREATE SEQUENCE hp_board_seq NOCACHE;
